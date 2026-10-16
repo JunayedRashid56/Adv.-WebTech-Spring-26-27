@@ -13,7 +13,15 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course"
+          ]
         }
       },
       "response": []
@@ -24,7 +32,16 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course",
+            "5"
+          ]
         }
       },
       "response": []
@@ -32,10 +49,27 @@
     {
       "name": "POST Create Course",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"NestJS Fundamentals\",\r\n  \"code\": \"CS101\",\r\n  \"instructor\": \"John Doe\",\r\n  \"credits\": 3,\r\n  \"description\": \"Introduction to NestJS\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course"
+          ]
         }
       },
       "response": []
@@ -43,10 +77,28 @@
     {
       "name": "PUT Update Course",
       "request": {
-        "method": "GET",
+        "method": "PUT",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"NestJS Advanced\",\r\n  \"code\": \"CS201\",\r\n  \"instructor\": \"Jane Doe\",\r\n  \"credits\": 4\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course",
+            "5"
+          ]
         }
       },
       "response": []
@@ -54,10 +106,28 @@
     {
       "name": "PATCH Course",
       "request": {
-        "method": "GET",
+        "method": "PATCH",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Updated NestJS Course\",\r\n  \"credits\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course",
+            "5"
+          ]
         }
       },
       "response": []
@@ -65,10 +135,28 @@
     {
       "name": "DELETE Course",
       "request": {
-        "method": "GET",
+        "method": "DELETE",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course",
+            "5"
+          ]
         }
       },
       "response": []
@@ -76,10 +164,32 @@
     {
       "name": "Upload Course Material",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": [
+                "/F:/AIUB/11th semester/Adv. WebTech/Mid/Lab/Lab_Task_02_NestJS.pdf"
+              ]
+            }
+          ]
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course/5/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course",
+            "5",
+            "upload"
+          ]
         }
       },
       "response": []
@@ -87,10 +197,27 @@
     {
       "name": "Empty Course Name",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"\",\r\n  \"code\": \"CS101\",\r\n  \"instructor\": \"John Doe\",\r\n  \"credits\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course"
+          ]
         }
       },
       "response": []
@@ -98,10 +225,27 @@
     {
       "name": "Credits Greater Than 6",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"NestJS Fundamentals\",\r\n  \"code\": \"CS101\",\r\n  \"instructor\": \"John Doe\",\r\n  \"credits\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course"
+          ]
         }
       },
       "response": []
@@ -109,10 +253,27 @@
     {
       "name": "Missing Required Fields",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course"
+          ]
         }
       },
       "response": []
@@ -120,10 +281,27 @@
     {
       "name": "Unknown Field",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"NestJS Fundamentals\",\r\n  \"code\": \"CS101\",\r\n  \"instructor\": \"John Doe\",\r\n  \"credits\": 3,\r\n  \"semester\": \"Fall\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course"
+          ]
         }
       },
       "response": []
@@ -131,10 +309,32 @@
     {
       "name": "Unsupported File Type",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": [
+                "/F:/AIUB/11th semester/Adv. WebTech/Mid/Lab/New Text Document.txt"
+              ]
+            }
+          ]
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course/5/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course",
+            "5",
+            "upload"
+          ]
         }
       },
       "response": []
@@ -142,10 +342,32 @@
     {
       "name": "File Larger Than 2MB",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": [
+                "/F:/AIUB/1st semester/Physics/Fundamentals of Physics Extended 10th Edition.pdf"
+              ]
+            }
+          ]
+        },
         "url": {
-          "raw": ""
+          "raw": "http://localhost:3000/course/5/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "course",
+            "5",
+            "upload"
+          ]
         }
       },
       "response": []
